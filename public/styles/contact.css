@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerSection {
+    position: relative;
+    width: 100%;
+    height: 81vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.shadowConatainer {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #133333;
+    z-index: 1;
+}
+
+.containerDiv {
+    position: relative;
+    width: 80%;
+    height: 90%;
+    background: #fff;
+    z-index: 2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #102c2c;
+}
+
+.side-contact {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.left-side-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    font-size: 25px;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.contact-left a {
+    color: #133333;
+    text-decoration: none;
+}
+
+.social-media {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.social-media-icons {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.call-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+
+    align-items: left;
+}
+
+.location-image {
+    width: 30px;
+    height: 30px;
+}
+
+.right-side-contact {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    font-size: 25px;
+}
+
+.main-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-class {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    color: #133333;
+    font-family: "Poppins";
+    font-size: 20px;
+}
+
+.input-class-textarea {
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    font-family: "Poppins";
+    margin-bottom: 10px;
+    color: #133333;
+    font-size: 20px;
+}
+
+.button-btn {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background: #133333;
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0px 0px 15px #133333, 10px 10px 20px #050d0d; */
+    overflow: hidden;
+}
+
+.button-btn-span {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    transform: translate(-60%, -60%) rotate(-20deg);
+    display: flex;
+    justify-content: center;
+    transition: all 0.7s ease-in-out;
+    align-items: center;
+}
+
+.button-btn:hover .button-btn-span {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+
+@media (max-width: 400px) {
+    .containerSection {
+        height: fit-content;
+    }
+    .left-side-contact {
+        justify-content: center;
+        align-items: center;
+    }
+    .containerDiv {
+        flex-direction: column;
+        margin: 5% 0%;
+    }
+    .side-contact {
+        width: 100%;
+    }
+    .contact-left {
+        align-items: center;
+    }
+    .call-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .call-section p {
+        padding-left: 50px !important;
+    }
+    .social-media {
+        width: 60%;
+    }
+}
